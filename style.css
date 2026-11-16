@@ -1,20 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #FFFFE0; /* Warna kuning cerah */
-    font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
-    color: #191970; /* Warna teks utama (Biru Gelap) */
-}
-
-.kartu-profil {
-    width: 300px;
-    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
+    /* Latar belakang warna merah */
+    background-color: #8b0000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    background-color: white;
-    border-radius: 15px; /* Membuat sudut menjadi melengkung */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
-    text-align: center; /* Menengahkan semua teks di dalam kartu */
 }
 
-.kartu-profil img {
-    width: 150px;
-    border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
+.card {
+    /* Kotak biodata warna putih */
+    background-color: #ffffff;
+    border: 3px solid #4a0000;
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 390px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-img {
+    /* Foto lingkaran tepat di tengah */
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #8b0000;
+    box-shadow: 0 6px 15px rgba(139, 0, 0, 0.3);
+}
+
+h1 {
+    /* Font gaya gothic klasik untuk judul nama */
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 2.2rem;
+    color: #8b0000;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+p {
+    /* Font gaya gothic modern agar tetap mudah dibaca */
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #a30000;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    font-family: 'Cinzel', serif;
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #8b0000;
+    color: #ffffff;
+    border: 2px solid #8b0000;
+}
+
+.btn-primary:hover {
+    background-color: #5c0000;
+    border-color: #5c0000;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+}
+
+.btn-secondary:hover {
+    background-color: #ffe5e5;
 }
