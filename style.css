@@ -5,8 +5,8 @@
 }
 
 body {
-    /* Latar belakang warna merah */
-    background-color: #8b0000;
+    /* Latar belakang gradasi mix merah gelap dan hitam pekat */
+    background: radial-gradient(circle at center, #7a0000 0%, #2b0000 50%, #0a0000 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,15 +15,16 @@ body {
 }
 
 .card {
-    /* Kotak biodata warna putih */
+    /* Kotak biodata warna putih bersih sesuai permintaan awal */
     background-color: #ffffff;
-    border: 3px solid #4a0000;
+    border: 3px solid #8b0000;
     border-radius: 20px;
     padding: 40px 30px;
     max-width: 390px;
     width: 100%;
     text-align: center;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    /* Efek bayangan merah menyala tipis di sekitar kartu putih */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 20px rgba(180, 0, 0, 0.4);
     transition: transform 0.3s ease;
 }
 
@@ -32,7 +33,6 @@ body {
 }
 
 .profile-img {
-    /* Foto lingkaran tepat di tengah */
     display: block;
     margin: 0 auto 20px auto;
     width: 145px;
@@ -40,24 +40,24 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #8b0000;
-    box-shadow: 0 6px 15px rgba(139, 0, 0, 0.3);
+    box-shadow: 0 6px 15px rgba(139, 0, 0, 0.35);
 }
 
 h1 {
-    /* Font gaya gothic klasik untuk judul nama */
-    font-family: 'UnifrakturMaguntia', serif;
-    font-size: 2.2rem;
+    /* Font Gothic Dekoratif: Huruf V tetap tajam dan terbaca jelas */
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.75rem;
+    font-weight: 900;
     color: #8b0000;
     margin-bottom: 12px;
     letter-spacing: 1px;
 }
 
 p {
-    /* Font gaya gothic modern agar tetap mudah dibaca */
     font-family: 'Cinzel', serif;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    color: #a30000;
+    color: #990000;
     line-height: 1.6;
     margin-bottom: 28px;
 }
@@ -73,7 +73,7 @@ p {
     display: inline-block;
     padding: 12px 20px;
     border-radius: 10px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
@@ -87,8 +87,8 @@ p {
 }
 
 .btn-primary:hover {
-    background-color: #5c0000;
-    border-color: #5c0000;
+    background-color: #4d0000;
+    border-color: #4d0000;
 }
 
 .btn-secondary {
@@ -98,5 +98,5 @@ p {
 }
 
 .btn-secondary:hover {
-    background-color: #ffe5e5;
+    background-color: #ffe6e6;
 }
